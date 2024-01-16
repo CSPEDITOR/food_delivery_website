@@ -4,10 +4,15 @@
     /* border: 1px solid black; */
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    /* background-image: url(bg.jpg); */
+    background: #47B4D1;
+}
 .container{
 width: 80%;
 margin: 0 auto;
 padding: 1%;
+display: flex;
 }
 .img-responsive{
 width: 100%;
@@ -82,6 +87,10 @@ border-radius: 5px;
 
 
 /* CSSS for navbar section */
+ul{
+    width:500px;
+    bg
+}
 
 .logo{
 width: 10%;
@@ -98,4 +107,24 @@ list-style-type: none;
 display: inline;
 padding: 1%;
 font-weight: bold;
+}
+.formm{
+    width: 70%;
+}
+.food-search{
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0; */
+    /* background: #000; */
+    width: 50%;
+}
+
+.food-search input[type="search"]{
+    width: 80%;
+    padding: 2%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #ff6b81; */
 }

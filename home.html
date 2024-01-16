@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <section class="navbar">
         <div class="container">
             <div class="logo">
@@ -14,7 +15,16 @@
                     <img src="imgs/logo.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
-
+            <section class="food-search text-center">
+                <div class="container">
+                    
+                    <form action="food-search.html" method="POST" class="formm">
+                        <input type="search" name="search" placeholder="Search for Food.." required>
+                        <input type="submit" name="submit" value="Search" class="btn btn-primary">
+                    </form>
+        
+                </div>
+            </section>
             <div class="menu text-right">
                 <ul>
                     <li>
@@ -33,7 +43,9 @@
             </div>
 
             <div class="clearfix"></div>
+            
         </div>
+
     </section>
 
 </body>
