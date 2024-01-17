@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
@@ -127,4 +127,14 @@ font-weight: bold;
     border: none;
     border-radius: 5px;
     /* background-color: #ff6b81; */
+}
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+}
+.explore h2{
+    color: white;
+    font-size: 260%;
 }
