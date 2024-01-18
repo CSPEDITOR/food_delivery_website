@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>food_Order</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
+
 <body>
-    
+
     <section class="navbar">
         <div class="container">
             <div class="logo">
@@ -15,17 +17,15 @@
                     <img src="imgs/logo.png" alt="Restaurant Logo" class="img-responsive">
                 </a>
             </div>
-            <section class="food-search text-center">
-                <div class="container">
-                    
-                    <form action="food-search.html" method="POST" class="formm">
-                        <input type="search" name="search" placeholder="Search for Food.." required>
-                        <input type="submit" name="submit" value="Search" class="btn btn-primary">
-                    </form>
-        
-                </div>
-            </section>
-            <div class="menu text-right">
+
+            <div class="search">
+                <form action="food-search.html" method="POST" class="formm">
+                    <input type="search" name="search" placeholder="Search for Food.." class="btn1" required>
+                    <input type="submit" name="submit" value="Search" class="btn2">
+                </form>
+            </div>
+
+            <div class="menu">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -41,20 +41,32 @@
                     </li>
                 </ul>
             </div>
-
-            <div class="clearfix"></div>
-            
         </div>
 
     </section>
-<section>
-    <div class="explore">
-        <h2>
-            EXPLORE
-        </h2>
-        
-    </div>
-</section>
+    <section class="categories">
+        <div class="explore">
+            <h2>
+                Explore Foods
+            </h2>
+        </div>
+        <div class="option">
+            <div class="breakfast">
+                <p>Breakfast</p>
+                <img src="imgs/breakfast1.jpg" alt="breakfast item">
+            </div>
+            <div class="breakfast">
+                <p>Lunch</p>
+                <img src="imgs/lunch.jpg" alt="lunch items">
+            </div>
+            <div class="breakfast">
+                <p>Dinner</p>
+                <img src="imgs/dinner.jpg" alt="dinner items">
 
+            </div>
+        </div>
+
+    </section>
 </body>
+
 </html>

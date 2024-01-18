@@ -47,12 +47,12 @@ a:hover{
 color: #ff4757;
 }
 
-.btn{
+/* .btn{
 padding: 1%;
 border: none;
 font-size: 1rem;
 border-radius: 5px;
-}
+} */
 .btn-primary{
 background-color: #ff6b81;
 color: white;
@@ -62,7 +62,7 @@ cursor: pointer;
 color: white;
 background-color: #ff4757;
 }
-h2{
+/* h2{
 color: #2f3542;
 font-size: 2rem;
 margin-bottom: 2%;
@@ -83,7 +83,7 @@ border: 1px solid white;
 margin: 5%;
 padding: 3%;
 border-radius: 5px;
-}
+} */
 
 
 /* CSSS for navbar section */
@@ -131,9 +131,23 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: top;
-    height: 100vh;
 }
 .explore h2{
     color: white;
     font-size: 260%;
+}
+.categories{
+    /* background: #000; */
+    height: 100vh;
+}
+
+.categories .option{
+    display: flex;
+
+}
+.categories .option img{
+    height:10%;
+}
+.breakfast{
+    height:5000px;
 }
