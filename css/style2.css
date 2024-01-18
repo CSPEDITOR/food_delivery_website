@@ -4,20 +4,22 @@
     font-family: Arial, Helvetica, sans-serif;
     /* border: 1px solid black; */
 }
+body{
+    scroll-behavior: smooth;
+}
 
 /* navigation bar   */
 .navbar {
 }
 .navbar .container {
-    margin-top: 20px;
     width: 100vw;
     height: 45px;
     display: flex;
     gap: 15%;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
-    background: white;
+    position: fixed;
+    background: #F4F4F4;
 }
 
 /* navbar logo start */
@@ -52,9 +54,13 @@ height: 100%;
     width: 20%;
     height: 100%;
     border-radius: 5px;
-    background: #47B4D1;
     border: none;
+    background: #79c0d4;
     color: white;
+}
+.navbar .container .search .formm .btn2:hover{
+    
+    background: #47B4D1;
 }
 
 /* searching box end  */
@@ -70,12 +76,12 @@ height: 100%;
     gap: 10%;
 }
 .navbar .container .menu ul a {
-    color: #ff7b00;
+    color: #79c0d4;
     text-decoration: none;
 }
 
 .navbar .container .menu ul a:hover {
-    color: #ff4757;
+    color: #47B4D1;
 }
 
 /* nav buttons end */
@@ -127,4 +133,34 @@ background-size:cover;
 .categories .option .breakfast img:hover{
     
     border: 5px solid #47B4D1;
+}
+
+/* custmore */
+.customer{
+    height: 100vh;
+    display: flex;
+}
+.customer .review{
+    width: 100%;
+    display: flex;
+}
+.customer .review .cooker {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customer .review .cooker img{
+height: 90%;
+}
+.customer .review .reviewtext{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.customer .review .reviewtext h1{
+
+
 }
