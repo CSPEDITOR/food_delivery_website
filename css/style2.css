@@ -135,6 +135,64 @@ background-size:cover;
     border: 5px solid #47B4D1;
 }
 
+
+/* start food menu  */
+.food_menu{
+    height: 100vh;
+    width: 100vw;
+    background: #ECECEC;
+    display: flex;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.food_menu h2{
+    font-size: 2vw;
+    color: #47B4D1;
+}
+.food_menu .firstrow{
+    width: 70%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    height: 20%;
+}
+.food_menu .firstrow .bg_menu{
+background: white;
+width: 50%;
+height: 100%;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+gap: 2%;
+}
+.food_menu .firstrow .bg_menu img{
+    border-radius: 10px;
+    height: 70%;
+}
+.food_menu .firstrow .bg_menu .details{
+    height: 100%;
+    justify-content: center;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+.food_menu .firstrow .bg_menu .details button{
+    height: 18%;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    background:#47B4D1;
+    color: white;
+}
+/* start food end  */
+
+
+
 /* custmore */
 .customer{
     height: 100vh;
@@ -156,11 +214,33 @@ height: 90%;
 .customer .review .reviewtext{
     display: flex;
     width: 50%;
+    gap: 2%;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
-.customer .review .reviewtext h1{
+.customer .review .reviewtext h2{
+font-size:3vw;
+color: #47B4D1;
+/* display: flex; */
+/* justify-content: start; */
+text-align: start;
+}
+.customer .review .reviewtext p{
+    color: #8D8D8D;
+    width: 65%;
+    text-align: start;
+    /* font-weight: bold; */
+}
+/* end of customer review  */
 
-
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background:  #ECECEC;
+    height: 40vh;align-items: end;
+}
+.footer p{
+    width: 50%;
+    text-align: center;
 }
