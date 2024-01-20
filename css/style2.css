@@ -13,7 +13,7 @@ body{
 }
 .navbar .container {
     width: 100vw;
-    height: 45px;
+    height: 50px;
     display: flex;
     gap: 15%;
     justify-content: center;
@@ -166,7 +166,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: 1px solid black;
-gap: 2%;
+gap: 2.5%;
 }
 .food_menu .firstrow .bg_menu img{
     border-radius: 10px;
@@ -179,15 +179,18 @@ gap: 2%;
     display: flex;
     flex-direction: column;
     width: 70%;
-
 }
-.food_menu .firstrow .bg_menu .details button{
+.food_menu .firstrow .bg_menu .details a{
     height: 18%;
     width: 30%;
     border-radius: 5px;
     border: none;
     background:#47B4D1;
     color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
 }
 /* start food end  */
 
@@ -232,15 +235,110 @@ text-align: start;
     /* font-weight: bold; */
 }
 /* end of customer review  */
-
-.footer{
+#detailsc {
+    color: #7c9192;
+}
+footer{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background:  #ECECEC;
-    height: 40vh;align-items: end;
+    height: 40vh;
+    align-items: center;
 }
-.footer p{
+footer .footer1{
+    display: flex;   
+    gap: 5%;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+}
+footer .footer1 img{
+    height: 30%;
+    margin-left: 20px;
+}
+footer .footer1 .list{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+footer .footer1 .list .lists {
+    /* background: #000; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    justify-content: center;
+    align-self: center;
+    gap:5%;
+}
+.listsimg{
+    /* background: #000; */
+    color: #47B4D1;
+    width: 40%;
+    height: 50%;
+    gap: 10%;
+}
+footer .footer1 .list .lists h3{
+    color: #47B4D1;
+}
+footer .footer1 .list .lists a{
+    text-decoration: none;
+
+}
+footer .footer1 .list .lists p{
+    color: #8a7c80;
+}
+
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.footer2 p{
+    width: 60%;
     text-align: center;
+    color: #8a7c80;
+}
+
+
+
+
+
+
+.fa {
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 30px; */
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  /* margin: 2px 2px; */
+  height: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #F70860;
+  color: white;
 }
