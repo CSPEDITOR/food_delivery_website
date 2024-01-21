@@ -1,10 +1,10 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     /* border: 1px solid black; */
 }
-body{
+html{
     scroll-behavior: smooth;
 }
 
@@ -82,7 +82,7 @@ height: 100%;
     color: #47B4D1;
 }
 
-/* nav buttons end */
+nav buttons end
 
 
 /* body work......  */
