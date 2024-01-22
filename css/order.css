@@ -53,7 +53,7 @@ height: 100%;
     height: 100%;
     border-radius: 5px;
     border: none;
-    background: #79c0d4;
+    background: #1d272a;
     color: white;
 }
 .navbar .container .search .formm .btn2:hover{
@@ -92,32 +92,31 @@ height: 100%;
    flex-direction: column;
    align-items: center;
    gap: 10%;
+   width: 100vw;
 }
-.container1 .order{
+.bg_menu{
+    border: 1px solid white;
+    border-radius: 10px;
     width: 40%;
     height: 25%;
-    gap: 20px;
-}
-.container1 .order fieldset{
-    border-radius: 10px;
-    height: 100%;
-    width: 100%;
-    border: 1px solid white;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5%;
-}
-.container1 .order fieldset .order_img{
-    height: 100%;
-    width: 25%;
-}
-.container1 .order fieldset .order_img img{
-    height:10%;
-}
-.container1 .order fieldset legend{
-    margin-left: 20px;
-}
-.container1 .order fieldset .order_menu{
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-}
+    }
+    .bg_menu img{
+        border-radius: 10px;
+        height: 70%;
+    }
+    .bg_menu .details{
+        height: 100%;
+        justify-content: center;
+        gap: 6%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    #title{
+        
+    }
+
