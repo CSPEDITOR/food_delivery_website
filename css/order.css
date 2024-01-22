@@ -94,6 +94,10 @@ height: 100%;
    gap: 10%;
    width: 100vw;
 }
+.container1 .heading{
+    color: white;
+    font-size: 2.5vw;
+}
 .bg_menu{
     border: 1px solid white;
     border-radius: 10px;
