@@ -1,0 +1,21 @@
+
+@media (max-width:600px) {
+    .navbar .container .logo img {
+        height:80%;
+    }
+    .navbar .container {
+    display: flex;
+    justify-content: start;
+    gap:2%;
+    }
+    .search{
+        display: none;
+    }
+    .navbar .container .menu{
+        margin-right: 50%;
+        /* gap: 5%; */
+    }
+    .navbar .container .menu ul{
+        gap: 5%;
+    }
+}
