@@ -344,7 +344,16 @@ footer .footer1 .list .lists p{
 .contactus{
     width: 100%;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 
+}
+.contactus .contact_container{
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }
