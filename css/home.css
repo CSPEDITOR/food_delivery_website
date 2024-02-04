@@ -340,3 +340,11 @@ footer .footer1 .list .lists p{
   background: #F70860;
   color: white;
 }
+
+.contactus{
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
