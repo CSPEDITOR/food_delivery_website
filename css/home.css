@@ -347,13 +347,19 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+height: 50vh;
 
 }
 .contactus .contact_container{
     flex-direction: column;
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    border-radius: 5px;
+}
+.contactus .contact_containe input{
+    width: 60%;
 }
