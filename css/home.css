@@ -357,8 +357,9 @@ height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
+    background: #ECECEC;
 }
 .contactus .contact_container h2{
 
