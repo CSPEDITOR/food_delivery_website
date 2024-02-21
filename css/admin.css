@@ -2,11 +2,12 @@
     background: #d1d8e0;
     height: 50vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .main_content .col-4{
-    width: 1%;
+    width: 50%;
     background:white;
     padding: 2%;
     height: 100%;
