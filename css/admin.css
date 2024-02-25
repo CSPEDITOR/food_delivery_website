@@ -17,10 +17,14 @@
 .main_content .sub_contain .col-4{
     background: white;
     padding: 2%;
+    height: 10px;
 }
 main{
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_content .sub_contain .col-4 h1{
+font-size: 2vw;
 }
