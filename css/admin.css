@@ -1,3 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    height: 100vh;
+}
 .main_content{
      background: #d1d8e0;
     height: 50vh;

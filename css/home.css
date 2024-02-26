@@ -8,81 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 
-/* navigation bar   */
-.navbar .container {
-    width: 100vw;
-    height: 50px;
-    display: flex;
-    gap: 15%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background: #F4F4F4;
-}
-
-/* navbar logo start */
-.navbar .container .logo {
-    height: 45px;
-}
-
-.navbar .container .logo img {
-    height: 100%;
-}
-
-/* navbar logo end */
 
 
-/* searching box start  */
-.navbar .container .search{
-    width: 20%;
-    height: 75%;
-}
-.navbar .container .search .formm{
-    width: 100%;
-    display: flex;
-    height: 100%;
-    gap: 4px;
-    
-}
-.navbar .container .search .formm .btn1{
-width: 80%;
-height: 100%;
-}
-.navbar .container .search .formm .btn2{
-    width: 20%;
-    height: 100%;
-    border-radius: 5px;
-    border: none;
-    background: #79c0d4;
-    color: white;
-}
-.navbar .container .search .formm .btn2:hover{
-    
-    background: #47B4D1;
-}
-
-/* searching box end  */
-
-
-
-
-
-/* nav buttons start */
-.navbar .container .menu ul {
-    display: flex;
-    list-style: none;
-    gap: 10%;
-}
-.navbar .container .menu ul a {
-    color: #79c0d4;
-    text-decoration: none;
-}
-
-.navbar .container .menu ul a:hover {
-    color: #47B4D1;
-}
-
-/* nav buttons end */
 
 
 /* body work......  */
