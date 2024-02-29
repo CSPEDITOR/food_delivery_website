@@ -15,7 +15,7 @@
 
 <body>
 
-    <?php include('repeat/menu.php'); ?>
+    <?php include('repeat/menu2.php'); ?>
     <section class="categories" id="homeid">
         <div class="explore">
             <h2>
