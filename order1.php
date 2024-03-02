@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Now </title>
-    <link rel="stylesheet" href="/css/order.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
 </head>
 <body>
@@ -78,5 +80,6 @@
             </div>
         </div>
 </section>
+<?php include('repeat/footer.php');?>
 </body>
 </html>
