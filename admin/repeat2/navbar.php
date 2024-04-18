@@ -13,8 +13,8 @@
             <ul class="center">
                 <a href="admin.php"><li>Home</li></a>
                 <a href="manage-admin.php"><li>admin</li></a>
-                <a href="#"><li>categories</li></a>
-                <a href="#"><li>order</li></a>
+                <a href="manage-order.php"><li>Order</li></a>
+                <a href="#"><li>food</li></a>
             </ul>
         </nav>
     </header>    
