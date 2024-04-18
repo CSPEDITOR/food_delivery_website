@@ -1,58 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin page</title>
-    <link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
-    <!-- <link rel="stylesheet" href="../css/home.css"> -->
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/admin.css">
-</head>
-
-<body>
-<?php include('../repeat/menu.php'); ?>
-    <main>
-        <div class="main_content">
-            <strong>DASHBORD</strong>
-            <div class="sub_contain">
-                <div class="col-4">
-                    <h1>5</h1>
+<?php
+include('repeat2/navbar.php');
+?>
+    <div class="container center">
+        <div class="small-container center">
+            <h3>Dashboard</h3>
+            <div class="container2">
+                <div class="box center">
+                    <h2>2</h2>
                     <br>
-                    Categories
+                    Home
                 </div>
-                <div class="col-4">
-                    <h1>5</h1>
+                <div class="box center">
+                    <h2>2</h2>
                     <br>
-                    Food
+                    admin
                 </div>
-                <div class="col-4">
-                    <h1>5</h1>
+                <div class="box center">
+                    <h2>2</h2>
                     <br>
-                    Categories
+                    Admin
                 </div>
-                <div class="col-4">
-                    <h1>5</h1>
+                <div class="box center">
+                    <h2>2</h2>
                     <br>
-                    Categories
-                </div>
-                <div class="col-4">
-                    <h1>5</h1>
-                    <br>
-                    Categories
+                    Admin
                 </div>
             </div>
-
         </div>
-    </main>
-    <footer>
-        <div class="footer2">
-            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
-                Content Policies. All trademarks are properties of their respective owners. 2024-2030 © WowFood™ Ltd.
-                All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
 </body>
 
 </html>

@@ -1,67 +1,64 @@
 *{
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
     font-family: Arial, Helvetica, sans-serif;
 }
-.main_content{
-     background: #d1d8e0;
-     width: 100%;
-    height: 50vh;
+.center{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start; 
-    width: 80vw;
-    gap: 50px;
-    margin-top: 220px;
-}
-.main_content .sub_contain{
-    width:100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.main_content .sub_contain .col-4{
-    background: white;
-    padding: 2%;
-    height: 10px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-main{
-    /* background: #bc7474; */
-    height: 50vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    /* align-items: end; */
-    /* gap: 100px; */
+header{
+    width: 100%;
+    height:50px;
 }
-.main_content .sub_contain .col-4 h1{
-font-size: 2vw;
-}
-footer{
+header nav{
     
-    height: 11rem;
-    margin-top: 11rem;
-    background-color: rgb(212, 207, 207);
-    display: flex;
-    justify-content: center;
-    align-items: end;
+    width: 50%;
     
+}
+header nav ul{
+width: 50%;list-style: none;
+gap: 5%;
+}
+header nav ul a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #79c0d4;
+}
+header nav ul a:hover{
+    color: #47B4D1;
 
 }
-.footer2{
-    width: 60%;
-    height: 3rem;
-    margin-bottom: 10px;
-    text-align: center;
-   
+body{
+    width: 100%; 
+    height: 60vh;
 }
-div>strong{
-    font-size: 50px;
-    margin-left: 100px;
-    color: #79c0d4;
+.container{
+    width: 100%;
+
+}
+.small-container{
+    gap: 10%;
+    height: 60vh;
+    width: 70%;
+    flex-direction: column;
+    background: #f3f3f3;
+}
+.small-container h3{
+    font-size:3rem ;
+}
+.container2{
+    width: 100%;
+    gap: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    /* background: #000; */
+    flex-direction: column;
+    width: 15%;
+    height: 10vh;
+    background: white;
 }
