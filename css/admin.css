@@ -40,7 +40,7 @@ body{
 
 }
 .small-container{
-    gap: 10%;
+    /* gap: 10%; */
     height: 60vh;
     width: 70%;
     flex-direction: column;
@@ -54,6 +54,8 @@ body{
     gap: 10%;
     display: flex;
     justify-content: space-evenly;
+    height:30vh;
+    align-items: center;
 }
 .box{
     /* background: #000; */

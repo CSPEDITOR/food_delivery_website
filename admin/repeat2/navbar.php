@@ -11,8 +11,8 @@
     <header class="center">
         <nav class="center">
             <ul class="center">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>admin</li></a>
+                <a href="admin.php"><li>Home</li></a>
+                <a href="manage-admin.php"><li>admin</li></a>
                 <a href="#"><li>categories</li></a>
                 <a href="#"><li>order</li></a>
             </ul>
