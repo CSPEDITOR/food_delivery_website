@@ -62,3 +62,15 @@ body{
     height: 10vh;
     background: white;
 }
+footer{
+    width: 100%;
+    height: 15vh;
+}
+.footer2{
+    width: 60%;
+}
+.footer2 p{
+    text-align: center;
+    color: #47B4D1;
+    font-size:1.1rem ;
+}

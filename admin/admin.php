@@ -1,6 +1,7 @@
 <?php
 include('repeat2/navbar.php');
 ?>
+<main>
     <div class="container center">
         <div class="small-container center">
             <h3>Dashboard</h3>
@@ -28,6 +29,7 @@ include('repeat2/navbar.php');
             </div>
         </div>
     </div>
-</body>
-
-</html>
+</main>
+<?php
+include ('repeat2/footer.php');
+ ?>
