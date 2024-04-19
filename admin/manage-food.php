@@ -4,7 +4,7 @@ include('repeat2/navbar.php');
 <main>
     <div class="container center">
         <div class="small-container center">
-            <h3>Order</h3>
+            <h3>Food</h3>
             <div class="container2">
             <div class="container2">
                <table>

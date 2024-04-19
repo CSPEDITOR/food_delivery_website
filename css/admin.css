@@ -48,6 +48,8 @@ body{
     flex-direction: column;
     background: #f3f3f3;
     gap: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 .small-container h3 {
     font-size:3rem ;
