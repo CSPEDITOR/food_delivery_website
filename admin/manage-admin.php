@@ -3,10 +3,91 @@ include('repeat2/navbar.php');
 ?>
 <main>
     <div class="container center">
-        <div class="small-container center">
+        <div class="small-container center padding">
             <h3>Admin</h3>
+            <a href="#" class="btn-primery">Add Admin</a>
             <div class="container2">
+               <table>
+                <tr>
+                    <th>S.N</th>
+                    <th>Full Name</th>
+                    <th>User Name</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Chandra Shekhara Prasad</td>
+                    <td>cspeditor</td>
+                    <td>
+                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="#" class="btn-denger">admin remove</a>
+                </td>
+                </tr>
                
+               </table>
             </div>
         </div>
     </div>
