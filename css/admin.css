@@ -121,7 +121,9 @@ footer{
     background: #f54b4b;
 }
 
-
+.tbladdadmin{
+    width: 100%;
+}
 table {
     width: 90%;
 }
@@ -132,4 +134,8 @@ table tr th{
 }
 table tr{
     height: 30px;
+}
+tr input {
+    height: 30px;
+    width: 100%;
 }

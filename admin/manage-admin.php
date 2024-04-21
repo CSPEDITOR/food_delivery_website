@@ -5,7 +5,7 @@ include('repeat2/navbar.php');
     <div class="container center">
         <div class="small-container center padding">
             <h3>Admin</h3>
-            <a href="#" class="btn-primery">Add Admin</a>
+            <a href="add-admin.php" class="btn-primery">Add Admin</a>
             <div class="container2">
                <table>
                 <tr>
