@@ -1,5 +1,5 @@
 <?php
-// include('connection.php');
+// include('config/connection.php');
 include('repeat2/navbar.php');
 ?>
 <main>

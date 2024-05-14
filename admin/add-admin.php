@@ -1,5 +1,4 @@
 <?php
-include('connection.php');
 include('repeat2/navbar.php');
 
 if(isset($_POST['submit'])) {
@@ -12,9 +11,17 @@ if(isset($_POST['submit'])) {
     $rec = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
     if($rec == TRUE) {
-        echo "Inserted";
-    } else {
-        echo "Failed";
+
+        //creating a session variable
+        $_SESSION['add']= "Admin added successfully";
+        // redirect this page the page to manage admin page
+        header("location:".HOMEURL.'admin/manage-admin.php');
+    } 
+    else {
+ //creating a session variable
+ $_SESSION['add']= "failed to add admin";
+ // redirect this page the page to manage admin page
+ header("location:".HOMEURL.'admin/manage-admin.php');
     }
 }
 ?>
