@@ -4,12 +4,17 @@ include('repeat2/navbar.php');
 <main>
     <div class="container center">
         <div class="small-container center padding">
-            <h3>Admin</h3>
+            <h3>Manage Admin</h3>
             <?php
-            if(isset($_SESSION['add']))
+         if(isset($_SESSION['add']))
             {
                 echo $_SESSION['add'];
                 unset($_SESSION['add']); //removing the session
+            }
+         if(isset($_SESSION['delete']))
+            {
+                echo $_SESSION['delete'];
+                unset($_SESSION['delete']); //removing the session
             }
             ?>
             <a href="add-admin.php" class="btn-primery">Add Admin</a>
@@ -38,13 +43,13 @@ include('repeat2/navbar.php');
                             <td><?php echo $user_name; ?></td>
                             <td>
                                 <a href="#" class="btn-secondary">admin update</a>
-                                <a href="#" class="btn-danger">admin remove</a>
+                                <a href="<?php echo HOMEURL;?>admin/delete-admin.php?id= <?php echo $id; ?>" class="btn-danger">admin remove</a>
                             </td>
                         </tr>
                         <?php
                     }
                 }
-                ?>
+            ?>
                 
                </table>
             </div>
