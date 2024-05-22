@@ -9,7 +9,7 @@ $sql = "DELETE FROM tbl_admin WHERE id=$id";
 // query execute the query 
 $rec = mysqli_query($conn,$sql);
 //check wherether the query execte or not
-if($rec)
+if($rec==true)
 {
     //Query execte successfully and admin delete
     // echo "Admin deleted";

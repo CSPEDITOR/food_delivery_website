@@ -16,6 +16,11 @@ include('repeat2/navbar.php');
                 echo $_SESSION['delete'];
                 unset($_SESSION['delete']); //removing the session
             }
+         if(isset($_SESSION['update']))
+            {
+                echo $_SESSION['update'];
+                unset($_SESSION['update']); //removing the session
+            }
             ?>
             <a href="add-admin.php" class="btn-primery">Add Admin</a>
             <div class="container2">
@@ -42,7 +47,7 @@ include('repeat2/navbar.php');
                             <td><?php echo $full_name; ?></td>
                             <td><?php echo $user_name; ?></td>
                             <td>
-                                <a href="#" class="btn-secondary">admin update</a>
+                                <a href="<?php echo HOMEURL;?>admin/update-admin.php?id= <?php echo $id; ?>" class="btn-secondary">admin update</a>
                                 <a href="<?php echo HOMEURL;?>admin/delete-admin.php?id= <?php echo $id; ?>" class="btn-danger">admin remove</a>
                             </td>
                         </tr>
