@@ -1,6 +1,11 @@
 <?php
 include ('./config/connection.php');
+
 ?>
+<?php
+include('login-check.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

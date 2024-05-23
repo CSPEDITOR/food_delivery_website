@@ -15,11 +15,16 @@ include('config/connection.php');
     <div class="container">
         <form method="POST">
             <span>Login</span>
-            <?php
+   <?php
     if(isset($_SESSION['login']))
     {
         echo $_SESSION['login'];
         unset($_SESSION['login']); //removing the session
+    }
+    if(isset($_SESSION['no-login-message']))
+    {
+        echo $_SESSION['no-login-message'];
+        unset ($_SESSION['no-login-message']);
     }
    ?>
             <label>User Name :</label>                                                    
@@ -61,7 +66,9 @@ if(isset($_POST['submit'])){
     {
         // user available and login success
         $_SESSION['login'] = "Login Successfully";
-        $_SESSION['user'] = $username;
+        $_SESSION['user'] = $username; // to chekc the user is loged in or not and logout will unset it
+
+
         // redirect to Home page / Dashboard
         header('location:'.HOMEURL.'admin/');
 
