@@ -19,7 +19,7 @@ include('login-check.php');
     <header class="center">
         <nav class="center">
             <ul class="center">
-                <a href="admin.php"><li>Home</li></a>
+                <a href="index.php"><li>Home</li></a>
                 <a href="manage-admin.php"><li>admin</li></a>
                 <a href="manage-order.php"><li>Order</li></a>
                 <a href="manage-food.php"><li>food</li></a>
