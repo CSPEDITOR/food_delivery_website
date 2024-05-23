@@ -29,14 +29,12 @@ body{
     width: 300px;
     gap: 10px;
 }
-.container label{
-}
 .container form span{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    color: #007bb5
+    color: #007bb5;
     font-size: 30px;
     margin-bottom: 20px;
 }

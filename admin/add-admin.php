@@ -1,10 +1,11 @@
 <?php
 include('repeat2/navbar.php');
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) 
+{
     $full_name = $_POST['full_name'];
     $username = $_POST['username'];
-    $password = md5($_POST['password']); //for creating encryption use md5
+    $password =$_POST['password']; //for creating encryption use md5
 
     $sql = "INSERT INTO tbl_admin (full_name, user_name, password) VALUES ('$full_name', '$username', '$password')";
 
