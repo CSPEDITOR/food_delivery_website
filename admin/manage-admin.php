@@ -1,11 +1,11 @@
 <?php
-include('repeat2/navbar.php');
+    include('repeat2/navbar.php');
 ?>
 <main>
     <div class="container center">
         <div class="small-container center padding">
             <h3>Manage Admin</h3>
-            <?php
+<?php
          if(isset($_SESSION['add']))
             {
                 echo $_SESSION['add'];
@@ -21,7 +21,7 @@ include('repeat2/navbar.php');
                 echo $_SESSION['update'];
                 unset($_SESSION['update']); //removing the session
             }
-            ?>
+?>
             <a href="add-admin.php" class="btn-primery">Add Admin</a>
             <div class="container2">
                <table>
@@ -31,7 +31,7 @@ include('repeat2/navbar.php');
                     <th>User Name</th>
                     <th>Action</th>
                 </tr>
-                <?php
+<?php
                 $sql = "SELECT * FROM tbl_admin";
                 $rec = mysqli_query($conn,$sql);
                 if($rec)
@@ -54,7 +54,7 @@ include('repeat2/navbar.php');
                         <?php
                     }
                 }
-            ?>
+?>
                 
                </table>
             </div>
@@ -62,5 +62,5 @@ include('repeat2/navbar.php');
     </div>
 </main>
 <?php
-include ('repeat2/footer.php');
+    include ('repeat2/footer.php');
 ?>

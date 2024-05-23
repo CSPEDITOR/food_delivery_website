@@ -1,5 +1,5 @@
 <?php
-include('config/connection.php');
+    include('config/connection.php');
 ?>
 
 <!DOCTYPE html>
@@ -16,16 +16,18 @@ include('config/connection.php');
         <form method="POST">
             <span>Login</span>
    <?php
-    if(isset($_SESSION['login']))
-    {
-        echo $_SESSION['login'];
-        unset($_SESSION['login']); //removing the session
-    }
-    if(isset($_SESSION['no-login-message']))
-    {
-        echo $_SESSION['no-login-message'];
-        unset ($_SESSION['no-login-message']);
-    }
+
+        if(isset($_SESSION['login']))
+             {
+                  echo $_SESSION['login'];
+                  unset($_SESSION['login']); //removing the session
+             }
+        if(isset($_SESSION['no-login-message']))
+            {
+                 echo $_SESSION['no-login-message'];
+                unset ($_SESSION['no-login-message']);
+            }
+
    ?>
             <label>User Name :</label>                                                    
             <input type="text" placeholder="Enter your Username" name="username" required>            
@@ -45,41 +47,42 @@ include('config/connection.php');
 </html>
 
 <?php
-// check whether the submit button is clicked or not 
-if(isset($_POST['submit'])){
-
-    //process for login 
-    //get the data from login form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // SQL to check whether the user with password exists or not
-    $sql = "SELECT * FROM tbl_admin WHERE user_name = '$username' AND password = '$password'";
-
-    // execute the query
-    $rec = mysqli_query($conn,$sql);
-
-    // count rows to check whether the user exists or not 
-    $count = mysqli_num_rows($rec);
-  echo $count;
-    if($count == 1)
+    // check whether the submit button is clicked or not 
+    if(isset($_POST['submit']))
     {
-        // user available and login success
-        $_SESSION['login'] = "Login Successfully";
-        $_SESSION['user'] = $username; // to chekc the user is loged in or not and logout will unset it
+
+        //process for login 
+        //get the data from login form
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        // SQL to check whether the user with password exists or not
+        $sql = "SELECT * FROM tbl_admin WHERE user_name = '$username' AND password = '$password'";
+
+        // execute the query
+        $rec = mysqli_query($conn,$sql);
+
+        // count rows to check whether the user exists or not 
+        $count = mysqli_num_rows($rec);
+        
+        if($count == 1)
+        {
+            // user available and login success
+            $_SESSION['login'] = "Login Successfully";
+            $_SESSION['user'] = $username; // to chekc the user is loged in or not and logout will unset it
 
 
-        // redirect to Home page / Dashboard
-        header('location:'.HOMEURL.'admin/');
+            // redirect to Home page / Dashboard
+            header('location:'.HOMEURL.'admin/');
 
 
+        }
+        else{
+            // user not available
+            $_SESSION['login'] = "Login failed ";
+
+            // redirect to Home page / Dashboard
+            header('location:'.HOMEURL.'admin/admin-login.php');
+        }
     }
-    else{
-        // user not available
-        $_SESSION['login'] = "Login failed ";
-
-        // redirect to Home page / Dashboard
-        header('location:'.HOMEURL.'admin/admin-login.php');
-    }
-}
 ?>

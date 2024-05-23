@@ -1,10 +1,8 @@
 <?php
-include ('./config/connection.php');
+    include ('./config/connection.php');
+    include('login-check.php');
+?>
 
-?>
-<?php
-include('login-check.php');
-?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,30 +1,32 @@
 <?php
-include('repeat2/navbar.php');
+    include('repeat2/navbar.php');
 
-if(isset($_POST['submit'])) 
-{
-    $full_name = $_POST['full_name'];
-    $username = $_POST['username'];
-    $password =$_POST['password']; //for creating encryption use md5
+    if(isset($_POST['submit'])) 
+        {
+             $full_name = $_POST['full_name'];
+             $username = $_POST['username'];
+             $password =$_POST['password']; //for creating encryption use md5
 
-    $sql = "INSERT INTO tbl_admin (full_name, user_name, password) VALUES ('$full_name', '$username', '$password')";
+             $sql = "INSERT INTO tbl_admin (full_name, user_name, password) VALUES ('$full_name', '$username', '$password')";
 
-    $rec = mysqli_query($conn, $sql) or die(mysqli_error($conn));
+             $rec = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
-    if($rec == TRUE) {
+             if($rec == TRUE)
+             {
+                 //creating a session variable
+                 $_SESSION['add']= "Admin added successfully";
 
-        //creating a session variable
-        $_SESSION['add']= "Admin added successfully";
-        // redirect this page the page to manage admin page
-        header("location:".HOMEURL.'admin/manage-admin.php');
-    } 
-    else {
- //creating a session variable
- $_SESSION['add']= "failed to add admin";
- // redirect this page the page to manage admin page
- header("location:".HOMEURL.'admin/manage-admin.php');
-    }
-}
+                 // redirect this page the page to manage admin page
+                 header("location:".HOMEURL.'admin/manage-admin.php');
+             } 
+             else
+             {
+                    //creating a session variable
+                     $_SESSION['add']= "failed to add admin";
+                    // redirect this page the page to manage admin page
+                 header("location:".HOMEURL.'admin/manage-admin.php');
+             }
+        }   
 ?>
 <main>
     <div class="container center">

@@ -1,14 +1,13 @@
 <?php
-include('repeat2/navbar.php');
+    include('repeat2/navbar.php');
 ?>
+
 <main>
     <div class="container center">
         <div class="small-container center padding">
             <h3>Update Admin</h3>
 
-
-
-            <?php
+<?php
             //get the id of selected admin
             $id = $_GET['id'];
 
@@ -31,12 +30,13 @@ include('repeat2/navbar.php');
                     $full_name = $row['full_name'];
                     $username = $row['user_name'];
                 }
-                else{
+                else
+                {
                     // redirect the manage admin page 
                     header('location:'.HOMEURL.'admin/manage-admin.php');
                 }
             }
-            ?>
+?>
 
 
 
@@ -64,41 +64,43 @@ include('repeat2/navbar.php');
     </div>
  </main>
 
- <?php 
- // check whether the submit button is clicked or not
- if(isset($_POST['submit']))
- {
-    //button clicked
-    //get the all values from form to update
-    $id = $_POST['id'];
-    $fullname = $_POST['full_name'];
-    $username = $_POST['username'];
 
-    //create a sql query to update admin
-    $sql ="UPDATE tbl_admin SET full_name ='$fullname', user_name = '$username' WHERE id='$id'";
-
-    //execute the Query 
-    $rec = mysqli_query($conn,$sql);
-
-    //check the query is execute or not
-    if($rec == true)
+<?php 
+    // check whether the submit button is clicked or not
+    if(isset($_POST['submit']))
     {
-        //query executed and admin update 
-        $_SESSION['update']="Admin update successfully";
-        
-        // redirect the manage admin page 
-        header('location:'.HOMEURL.'admin/manage-admin.php');
-    }
-    else{
-        // failed to update admin 
-        $_SESSION['update']="failed to update";
+        //button clicked
+        //get the all values from form to update
+        $id = $_POST['id'];
+        $fullname = $_POST['full_name'];
+        $username = $_POST['username'];
 
-        // redirect the manage admin page 
-        header('location:'.HOMEURL.'admin/manage-admin.php');
+        //create a sql query to update admin
+        $sql ="UPDATE tbl_admin SET full_name ='$fullname', user_name = '$username' WHERE id='$id'";
+
+        //execute the Query 
+        $rec = mysqli_query($conn,$sql);
+
+        //check the query is execute or not
+        if($rec == true)
+        {
+            //query executed and admin update 
+            $_SESSION['update']="Admin update successfully";
+            
+            // redirect the manage admin page 
+            header('location:'.HOMEURL.'admin/manage-admin.php');
+        }
+        else{
+            // failed to update admin 
+            $_SESSION['update']="failed to update";
+
+            // redirect the manage admin page 
+            header('location:'.HOMEURL.'admin/manage-admin.php');
+        }
     }
- }
  
  ?>
- <?php
-include ('repeat2/footer.php');
+
+<?php
+    include ('repeat2/footer.php');
 ?>

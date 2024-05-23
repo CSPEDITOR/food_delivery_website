@@ -1,5 +1,5 @@
 <?php
-include('repeat2/navbar.php');
+    include('repeat2/navbar.php');
 ?>
 <main>
     <div class="container center">
@@ -94,5 +94,5 @@ include('repeat2/navbar.php');
     </div>
 </main>
 <?php
-include ('repeat2/footer.php');
- ?>
+    include ('repeat2/footer.php');
+?>
