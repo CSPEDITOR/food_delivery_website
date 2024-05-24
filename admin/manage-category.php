@@ -4,7 +4,7 @@
 <main>
     <div class="container center">
         <div class="small-container center">
-            <h3>Food</h3>
+            <h3>Manage Category</h3>
             <div class="container2">
             <div class="container2">
                <table>

@@ -19,6 +19,7 @@
             <ul class="center">
                 <a href="index.php"><li>Home</li></a>
                 <a href="manage-admin.php"><li>admin</li></a>
+                <a href="manage-category.php"><li>Category</li></a>
                 <a href="manage-order.php"><li>Order</li></a>
                 <a href="manage-food.php"><li>food</li></a>
                 <a href="logout.php"><li>logout</li></a>

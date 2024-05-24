@@ -20,7 +20,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -29,7 +29,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -38,7 +38,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -47,7 +47,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -56,7 +56,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -65,7 +65,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -74,7 +74,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                 <tr>
@@ -83,7 +83,7 @@
                     <td>cspeditor</td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-denger">admin remove</a>
+                        <a href="#" class="btn-danger">admin remove</a>
                 </td>
                 </tr>
                
