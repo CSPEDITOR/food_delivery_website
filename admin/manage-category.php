@@ -5,6 +5,15 @@
     <div class="container center">
         <div class="small-container center">
             <h3>Manage Category</h3>
+            <br>
+            <?php
+            if(isset($_SESSION['add']))
+            {
+                echo $_SESSION['add'];
+                unset ($_SESSION['add']);
+            }
+            
+            ?>
             <a href="<?php echo HOMEURL; ?>admin/add-category.php" class="btn-primery">Add Category</a>
             <div class="container2">
             <div class="container2">
