@@ -16,6 +16,7 @@
 header{
     width: 100%;
     height:50px;
+  
 }
 header nav{
     
@@ -86,7 +87,7 @@ footer{
     padding: 1%;
     color: white;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none;height: 100%;
     
 
 }
@@ -123,9 +124,11 @@ footer{
 
 .tbladdadmin{
     width: 100%;
+    height: 200px;
 }
 table {
     width: 90%;
+   
 }
 table tr th{
     border-bottom:1px solid black ;
@@ -134,8 +137,11 @@ table tr th{
 }
 table tr{
     height: 30px;
+    
+    
 }
 tr input {
+   
     height: 30px;
     width: 100%;
 }
