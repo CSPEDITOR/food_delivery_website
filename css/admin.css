@@ -16,6 +16,8 @@
 header{
     width: 100%;
     height:50px;
+    position: fixed;
+    background: white;
   
 }
 header nav{
@@ -41,6 +43,7 @@ body{
     height: 60vh;
 }
 .container{
+  padding-top: 50px;
     width: 100%;
 
 }
@@ -53,7 +56,7 @@ body{
     padding-top: 20px;
 }
 .small-container h3 {
-    font-size:3rem ;
+    font-size:2.5rem ;
 }
 .container2{
     width: 100%;
@@ -137,8 +140,6 @@ table tr th{
 }
 table tr{
     height: 30px;
-    
-    
 }
 tr input {
    

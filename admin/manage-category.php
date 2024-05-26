@@ -5,14 +5,22 @@
     <div class="container center">
         <div class="small-container center">
             <h3>Manage Category</h3>
-            <br>
             <?php
-            if(isset($_SESSION['add']))
-            {
-                echo $_SESSION['add'];
-                unset ($_SESSION['add']);
-            }
-            
+                if(isset($_SESSION['add']))
+                {
+                    echo $_SESSION['add'];
+                    unset ($_SESSION['add']);
+                }
+                if(isset($_SESSION['remove']))
+                {
+                    echo $_SESSION['remove'];
+                    unset ($_SESSION['remove']);
+                }
+                if(isset($_SESSION['delete']))
+                {
+                    echo $_SESSION['delete'];
+                    unset ($_SESSION['delete']);
+                }
             ?>
             <a href="<?php echo HOMEURL; ?>admin/add-category.php" class="btn-primery">Add Category</a>
             <div class="container2">
@@ -78,11 +86,10 @@
 
                                     <td><?php echo $featured; ?></td>
                                     <td><?php echo $active; ?></td>
-                                    <td></td>
-                                    <td></td>
+                                    
                                     <td>
                                         <a href="#" class="btn-secondary">Update Category</a>
-                                        <a href="#" class="btn-danger">Remove Category</a>
+                                        <a href="<?php echo HOMEURL;?>admin/delete-category.php?id=<?php echo $id;?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Remove Category</a>
                                 </td>
                                 </tr>   
 
