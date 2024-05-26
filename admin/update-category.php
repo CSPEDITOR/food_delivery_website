@@ -58,7 +58,20 @@ else{
                    <tr>
                       <td>Current Image :</td>
                        <td>
-                        img will be display
+                                <?php
+                                 if($current_image != "")
+                                     {
+                                        // display the img
+                                        ?>
+                                        <img src="<?php echo HOMEURL;?>imgs/category/<?php echo $current_image ?>" width="150px" alt="">
+                                        <?php
+
+                                      }
+                                 else{
+                                    echo "Img is not added";
+
+                                      }
+                                 ?>
                       </td>
                    </tr>
                    <tr>
