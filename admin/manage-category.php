@@ -21,6 +21,11 @@
                     echo $_SESSION['delete'];
                     unset ($_SESSION['delete']);
                 }
+                if(isset($_SESSION['no-category-found']))
+                {
+                    echo $_SESSION['no-category-found'];
+                    unset ($_SESSION['no-category-found']);
+                }
             ?>
             <a href="<?php echo HOMEURL; ?>admin/add-category.php" class="btn-primery">Add Category</a>
             <div class="container2">
@@ -88,7 +93,7 @@
                                     <td><?php echo $active; ?></td>
                                     
                                     <td>
-                                        <a href="#" class="btn-secondary">Update Category</a>
+                                        <a href="<?php echo HOMEURL; ?>admin/update-category.php?id=<?php echo $id?>" class="btn-secondary">Update Category</a>
                                         <a href="<?php echo HOMEURL;?>admin/delete-category.php?id=<?php echo $id;?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Remove Category</a>
                                 </td>
                                 </tr>   

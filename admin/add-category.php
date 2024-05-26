@@ -88,7 +88,8 @@
                         //upload the image
                         //to upload image we need image name, source path and destination path 
                         $image_name = $_FILES['image']['name'];
-                        
+                        if($image_name != "")
+                        {
                         //auto rename our img
                         //get the extension of out image (jpg,png,gif,etc) eg, food1.jpg
                         $ext = end(explode('.',$image_name));
@@ -114,6 +115,7 @@
                             die();
 
                         }
+                    }
                     }
                     else{
                         // dont upload the image and se the name as blank
