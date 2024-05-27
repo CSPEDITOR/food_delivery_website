@@ -31,6 +31,16 @@
                     echo $_SESSION['update'];
                     unset ($_SESSION['update']);
                 }
+                if(isset($_SESSION['upload']))
+                {
+                    echo $_SESSION['upload'];
+                    unset ($_SESSION['upload']);
+                }
+                if(isset($_SESSION['failed-remove']))
+                {
+                    echo $_SESSION['failed-remove'];
+                    unset ($_SESSION['failed-remove']);
+                }
             ?>
             <a href="<?php echo HOMEURL; ?>admin/add-category.php" class="btn-primery">Add Category</a>
             <div class="container2">

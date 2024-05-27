@@ -113,10 +113,74 @@ if(isset($_POST['submit']))
     $active = $_POST['active'];
     
     //2.updataing the new image if selected
+    //check whether the image is selected or not
+    if(isset($_FILES['image']['name']))
+    {
+        //get the img details
+        $image_name = $_FILES['image']['name'];
+
+        //check whether the image is available or not
+        if($image_name != "")
+        {
+            //upload the new img
+             //auto rename our img
+                        //get the extension of out image (jpg,png,gif,etc) eg, food1.jpg
+                        $ext = end(explode('.',$image_name));
+
+                        // now renaming the image name
+                        $image_name = "Food_Category_".rand(000,999).'.'.$ext;  //eg "food_Category_002.jpg"
+
+                        $source_path = $_FILES['image']['tmp_name'];
+                        $destination_path = "../imgs/category/".$image_name;
+
+                        //finally upload the image
+                        $upload = move_uploaded_file($source_path,$destination_path);
+                        
+                        //check whether the img is uploaded or not 
+                        //if the image is not uploaded then will stop th process and redirect with eorro message
+                        if($upload == false)
+                        {
+                            //set the message
+                            $_SESSION['upload']="Failed to upload image";
+
+                            //redriect to add category page
+                            header('location:'.HOMEURL.'admin/manage-category.php');
+                            die();
+
+                        }
+
+            //remove the current img if available
+            if($current_image != "")
+            {
+                $remove_path = "../imgs/category/".$current_image;
+                $remove = unlink($remove_path);
+    
+                //check whether the image is removed or not 
+                // if failed to remove then display message and stop the process
+                if($remove == false)
+                {
+                    $_SESSION['failed-remove']= "failed to remove current image";
+                    // redirect 
+                    header('location:'.HOMEURL.'admin/manage-category.php');
+                    die();
+                }
+            }
+            
+
+
+        }
+        else{
+            $image_name = $current_image;
+        }
+    }
+    else{
+        // we new to img name
+        $image_name = $current_image;
+    }
 
 
     // 3. then update the data base
-    $sql2 ="UPDATE tbl_category SET title = '$title', featured = '$featured', active = '$active'
+    $sql2 ="UPDATE tbl_category SET title = '$title', image_name = '$image_name', featured = '$featured', active = '$active'
     WHERE id = $id ";
     
     //execute the query
