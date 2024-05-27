@@ -82,23 +82,65 @@ else{
                    </tr>
                    <tr>
                         <td>featured : </td>
-                        <td><input type="radio" name="featured" value="Yes">Yes</td>
-                        <td><input type="radio" name="featured" value="No">No</td>
+                        <td><input <?php if($featured == "Yes") {echo "checked";} ?> type="radio" name="featured" value="Yes">Yes</td>
+                        <td><input <?php if($featured == "No") {echo "checked";} ?> type="radio" name="featured" value="No">No</td>
                    </tr>
                    <tr>
                     <td>Active: </td>
-                    <td><input type="radio" name="active" value="Yes">Yes</td>
-                    <td><input type="radio" name="active" value="No">No</td>
+                    <td><input <input <?php if($active == "Yes") {echo "checked";} ?> type="radio" name="active" value="Yes">Yes</td>
+                    <td><input <input <?php if($active == "No") {echo "checked";} ?> type="radio" name="active" value="No">No</td>
                    </tr>
                    <tr >
                         <td colspan="2">
-                            <!-- <input type="hidden" name="id" value="<?php echo $id?>"> -->
+                            <input type="hidden" name="current_image" value="<?php echo $current_image; ?>">
+                            <input type="hidden" name="id" value="<?php echo $id; ?>">
                             <input type="submit" name="submit" value="Update admin" class="btn-primery">
 
                         </td>
                     </tr>
                 </table>
             </form>
+
+<?php
+if(isset($_POST['submit']))
+{
+    // echo "clicked";
+    //1. Get all the values form our form
+    $id = $_POST['id'];
+    $title = $_POST['title'];
+    $current_image = $_POST['current_image'];
+    $featured = $_POST['featured'];
+    $active = $_POST['active'];
+    
+    //2.updataing the new image if selected
+
+
+    // 3. then update the data base
+    $sql2 ="UPDATE tbl_category SET title = '$title', featured = '$featured', active = '$active'
+    WHERE id = $id ";
+    
+    //execute the query
+    $rec = mysqli_query($conn,$sql2);
+
+    // 4. the redirect to manage category with message
+    //check wheter executed or not
+    if($rec == true)
+    {
+        $_SESSION['update']= "Category updated successfully";
+        header('location:'.HOMEURL.'admin/manage-category.php');
+        // echo "done";
+    }
+    else
+    {
+        // echo "not done";
+        $_SESSION['update']= "Failed to update Category";
+        header('location:'.HOMEURL.'admin/manage-category.php');
+    }
+}
+
+
+?>
+
          </div>
     </div>
  </main>
