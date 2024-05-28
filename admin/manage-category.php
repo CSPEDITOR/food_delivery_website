@@ -43,7 +43,7 @@
                 }
             ?>
             <a href="<?php echo HOMEURL; ?>admin/add-category.php" class="btn-primery">Add Category</a>
-            <div class="container2">
+    
             <div class="container2">
                <table>
                 <tr>
@@ -137,7 +137,7 @@
 
                     
                </table>
-            </div>
+           
             </div>
         </div>
     </div>
