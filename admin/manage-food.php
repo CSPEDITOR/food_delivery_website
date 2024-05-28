@@ -11,6 +11,18 @@
                 echo $_SESSION['add'];
                 unset($_SESSION['add']);
             }
+            if(isset($_SESSION['delete']))
+            {
+                echo $_SESSION['delete'];
+                unset($_SESSION['delete']);
+            }
+            
+            if(isset($_SESSION['upload']))
+            {
+                echo $_SESSION['upload'];
+                unset($_SESSION['upload']);
+            }
+
             ?>
             <a href="<?php echo HOMEURL; ?>admin/add-food.php" class="btn-primery"> Add Food</a>
             <div class="container2">
@@ -62,8 +74,6 @@ if($count>0)
                                 //we have image and display image
                                 ?>
                                 <img src="<?php echo HOMEURL;?>imgs/food/<?php echo $image_name; ?>" width="100px" alt="">
-
-
                                 <?php                            }
                         ?>
                     </td>
@@ -71,7 +81,8 @@ if($count>0)
                     <td><?php echo $active; ?></td>
                     <td>
                         <a href="#" class="btn-secondary">admin upadate</a>
-                        <a href="#" class="btn-danger">admin remove</a>
+                        <a href="<?php echo HOMEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name ?>" class="btn-danger">admin remove</a>
+                        
                     </td>
         </tr>
 
