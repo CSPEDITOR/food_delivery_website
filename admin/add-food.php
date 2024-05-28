@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include('repeat2/navbar.php');
 ?>
 <main>
@@ -132,6 +133,7 @@ include('repeat2/navbar.php');
                             // Failed to upload the image
                             $_SESSION['upload'] = "Failed to upload image";
                             header('location:' . HOMEURL . 'admin/add-food.php');
+                            ob_end_flush();
                             die();
                         }
                     }
@@ -157,13 +159,14 @@ include('repeat2/navbar.php');
                     if($res2 == true)
                     {
                         $_SESSION['add'] = "Food added successfully";
-                        header('location:' . HOMEURL . 'admin/manage-food.php');
+                        header('location:'.HOMEURL.'admin/manage-food.php');
                     }
                     else
                     {
                         $_SESSION['add'] = "Failed to add food";
-                        header('location:' . HOMEURL . 'admin/manage-food.php');
+                        header('location:'.HOMEURL.'admin/manage-food.php');
                     }
+                    ob_end_flush();
                 }
                 ?>
             </div>
@@ -172,4 +175,5 @@ include('repeat2/navbar.php');
 </main>
 <?php
 include ('repeat2/footer.php');
+ob_end_flush();
 ?>
