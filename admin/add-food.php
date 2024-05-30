@@ -66,7 +66,7 @@ include('repeat2/navbar.php');
                                     else
                                     {
                                         // we do not have categories
-                                        ?>
+                                    ?>
                                         <option value="0">No Category Food</option>
                                         <?php
                                     }
@@ -139,6 +139,7 @@ include('repeat2/navbar.php');
                     }
                     else
                     {
+                        // echo "not selected";
                         $image_name = ""; // Set default value as blank
                     }
 
