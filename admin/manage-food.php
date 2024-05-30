@@ -80,7 +80,7 @@ if($count>0)
                     <td><?php echo $featured; ?></td>
                     <td><?php echo $active; ?></td>
                     <td>
-                        <a href="#" class="btn-secondary">admin upadate</a>
+                        <a href="<?php echo HOMEURL;?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">admin upadate</a>
                         <a href="<?php echo HOMEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name ?>" class="btn-danger">admin remove</a>
                         
                     </td>

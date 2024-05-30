@@ -36,16 +36,16 @@
                 <form action="" method="POST">
                     <table class="tbladdadmin">
                         <tr>
-                            <td>Fullname</td>
-                            <td><input type="text" placeholder="Enter your full name" name="full_name"></td>
+                            <td>Fullname :</td>
+                            <td><input type="text" placeholder="Enter your full name" name="full_name" required></td>
                         </tr>
                         <tr>
-                            <td>Username</td>
-                            <td><input type="text" placeholder="Enter your username" name="username"></td>
+                            <td>Username :</td>
+                            <td><input type="text" placeholder="Enter your username" name="username" required></td>
                         </tr>
                         <tr>
-                            <td>Password</td>
-                            <td><input type="password" placeholder="Enter your Password" name="password"></td>
+                            <td>Password :</td>
+                            <td><input type="password" placeholder="Enter your Password" name="password" required></td>
                         </tr>
                         <tr>
                             <td colspan="2">
