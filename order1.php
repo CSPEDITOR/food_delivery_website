@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Now </title>
-    <link rel="stylesheet" href="css/order.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
-</head>
-<body>
-    <!-- navbar................ start -->
-    <section class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="imgs/logo.png" alt="Restaurant Logo" class="img-responsive">
-                </a>
-            </div>
-            
-            <div class="search">
-                <form action="food-search.html" method="POST" class="formm">
-                    <input type="search" name="search" placeholder="Search for Food.." class="btn1" required>
-                    <input type="submit" name="submit" value="Search" class="btn2">
-                </form>
-            </div>
-            
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="home.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="categories.html">Categories</a>
-                    </li>
-                    <li>
-                        <a href="#foodid">Foods</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- navbar................ end -->
+<?php include('repeat/menu2.php'); ?>
 <section>
     <div class="container1">
          <h2 class="heading">Fill this form to confirm your order.</h2> 
@@ -81,5 +35,3 @@
         </div>
 </section>
 <?php include('repeat/footer.php');?>
-</body>
-</html>

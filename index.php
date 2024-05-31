@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>food_Order</title>
-    <link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/resposive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-
-<body>
-
     <?php include('repeat/menu2.php'); ?>
     <section class="categories" id="homeid">
         <div class="explore">
@@ -146,6 +129,3 @@
             duration: 500,
         });
     </script>
-</body>
-
-</html>
