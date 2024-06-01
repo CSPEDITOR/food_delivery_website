@@ -2,13 +2,22 @@
     <section class="categories" id="homeid">
         <div class="explore">
             <h2>
-                Explore Foods
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto soluta esse culpa rerum recusandae, quasi repellat veniam doloremque repellendus libero odio, eum incidunt? Tempore, molestias sequi? Numquam, ut iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto soluta esse culpa rerum recusandae, quasi repellat veniam doloremque repellendus libero odio, eum incidunt? Tempore, molestias sequi? Numquam, ut iusto!
             </h2>
+            <img width="500px" src="imgs/bg32.png" alt="" data-aos="fade-left">
         </div>
-        <div class="option" id="category">
+        <br id="category">
+        <br>
+        <br>
+        <br>
+        <h2  style="text-align: center;">Food Category </h2>
+        <br>
+        <div class="option">
+           
             <?php 
             //craete sql query to display categoryes form database
-            $sql = "SELECT * FROM tbl_category";
+            $sql = "SELECT * FROM tbl_category WHERE active='Yes' AND featured= 'Yes' LIMIT 3";
 
             //execute the query
             $rec = mysqli_query($conn,$sql);

@@ -24,15 +24,20 @@ html{
 }
 .categories .explore{
     margin-top: 20px;
-    display: flex;
-justify-content: center;
+     display: flex;
+/* justify-content: center; */
 align-items: center;
+text-align: start;
 color: whitesmoke;
-font-size: 1.6vw;
-height: 250px;
-background-image: url('../imgs/bg1.jpg'); 
-background-repeat: no-repeat;
-background-size:cover;
+font-size: 1vw;
+height: 100vh;
+background: #47B4D1;
+gap: 100px;
+}
+.categories .explore h2{
+    /* background: #000; */
+    width: 50%;
+    margin-left: 50px;
 }
 
 .categories .option{
