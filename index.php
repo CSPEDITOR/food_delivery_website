@@ -39,13 +39,13 @@
                                 ?>
 
                                 <img src="<?php echo HOMEURL; ?>imgs/category/<?php echo $image_name; ?>" alt="breakfast item">
-
-                                <?php
+                                 <?php
 
                             }
                             ?>
                         </a>
                      </div>
+                     
 
                     <?php
 
