@@ -1,4 +1,5 @@
-<?php include('repeat/menu2.php'); ?>
+<?php include('repeat/menu2.php');
+
 <section>
     <div class="container1">
          <h2 class="heading">Fill this form to confirm your order.</h2> 

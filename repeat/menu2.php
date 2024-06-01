@@ -1,4 +1,6 @@
-
+<?php 
+include ('admin/config/connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 

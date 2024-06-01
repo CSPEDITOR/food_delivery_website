@@ -6,22 +6,68 @@
             </h2>
         </div>
         <div class="option" id="category">
-            <div class="breakfast">
-                <p>Breakfast</p>
-                <a href="#"><img src="imgs/breakfast1.jpg" alt="breakfast item"></a>
+            <?php 
+            //craete sql query to display categoryes form database
+            $sql = "SELECT * FROM tbl_category";
 
-            </div>
-            <div class="breakfast">
+            //execute the query
+            $rec = mysqli_query($conn,$sql);
+                        //Count rows to check whether the category is available or not
+            $count = mysqli_num_rows($rec);
+
+            if($count >0)
+            {
+                //category is Availble
+                while($row = mysqli_fetch_assoc($rec))
+                {
+                    //get the values like id ,title ,image_name
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $image_name = $row['image_name'];
+                    ?>
+
+                    <div class="breakfast">
+                        <p><?php echo $title; ?></p>
+                        <a href="#">
+                            <?php
+                            if($image_name =="")
+                            {
+                                echo "Image not Available";
+                            }
+                            else
+                            {
+                                ?>
+
+                                <img src="<?php echo HOMEURL; ?>imgs/category/<?php echo $image_name; ?>" alt="breakfast item">
+
+                                <?php
+
+                            }
+                            ?>
+                        </a>
+                     </div>
+
+                    <?php
+
+                }
+            }
+            else{
+                //not Available category
+                echo "Category not added.";
+            }
+            ?>
+           
+            <!-- <div class="breakfast">
                 <p>Lunch</p>
                 <a href="#"><img src="imgs/lunch.jpg" alt="lunch items"></a>
 
-            </div>
-            <div class="breakfast">
+            </div> -->
+            <!-- <div class="breakfast">
                 <p>Dinner</p>
                 <a href="#"><img src="imgs/dinner.jpg" alt="dinner items"></a>
 
 
-            </div>
+            </div> -->
         </div>
 
     </section>
