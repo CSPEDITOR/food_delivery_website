@@ -78,6 +78,7 @@
 
             </div> -->
         </div>
+        <a href="<?php echo HOMEURL;?>category.php" style="text-align:center; color:#47B4D1;font-size:1rem; text-decoration: none; ">More Category</a>
 
     </section>
     <section class="food_menu" id="foodid">
@@ -147,7 +148,7 @@
         </a>
 
     </section>
-    <section class="customer">
+    <section class="customer" id="about">
         <div class="review">
             <div class="cooker" data-aos="fade-right">
                 <img src="imgs/cooker.png" alt="">
@@ -183,4 +184,4 @@
             offset: 200,
             duration: 500,
         });
-    </script>
+    </script>5

@@ -50,6 +50,12 @@ include ('admin/config/connection.php');
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo HOMEURL;?>admin/admin-login.php">Admin</a>
+                        </li>
                     </ul>
                 </div>
             </div>
