@@ -7,6 +7,8 @@
             </h2>
             <img width="500px" src="imgs/bg32.png" alt="" data-aos="fade-left">
         </div>
+        <br>
+        <br><br><br>
         <br id="category">
         <br>
         <br>

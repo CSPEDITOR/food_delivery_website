@@ -20,8 +20,9 @@ html{
     display:flex;
     flex-direction: column;
     justify-content: center;
- 
-}
+    z-index: 1;
+    
+    }
 .categories .explore{
     margin-top: 20px;
      display: flex;
@@ -57,15 +58,15 @@ gap: 100px;
     justify-content: center;
     align-items: center;
     font-size:1.5vw ;
-}
-.categories .option .breakfast img{
+    }
+    .categories .option .breakfast img{
     margin-top: 10px;
     width: 100%;
     border-radius: 20px;
-}
-.categories .option .breakfast img:hover{
-    
-    border: 5px solid #47B4D1;
+    }
+    .categories .option .breakfast img:hover{
+        
+        border: 5px solid #47B4D1;
 }
 
 
@@ -78,11 +79,11 @@ gap: 100px;
     flex-direction: column;justify-content: center;
     align-items: center;
     gap: 2.5%;
-}
-.food_menu h2{
+    }
+    .food_menu h2{
     font-size: 2vw;
     color: #47B4D1;
-}
+    }
 .food_menu .firstrow{
     width: 70%;
     display: flex;
@@ -91,9 +92,9 @@ gap: 100px;
     height: 20%;
 }
 .food_menu .firstrow .bg_menu{
-background: white;
-width: 50%;
-height: 100%;
+    background: white;
+    width: 50%;
+    height: 100%;
 border-radius: 10px;
 display: flex;
 justify-content: center;
@@ -104,7 +105,8 @@ gap: 2.5%;
 .food_menu .firstrow .bg_menu img{
     border-radius: 10px;
     height: 70%;
-}
+z-index: 1;
+    }
 .food_menu .firstrow .bg_menu .details{
     height: 100%;
     justify-content: center;
