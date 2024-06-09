@@ -39,19 +39,19 @@ include ('admin/config/connection.php');
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#homeid">Home</a>
+                            <a href="<?php echo HOMEURL; ?>#homeid">Home</a>
                         </li>
                         <li>
-                            <a href="#category">Categories</a>
+                            <a href="<?php echo HOMEURL; ?>#category">Categories</a>
                         </li>
                         <li>
-                            <a href="#foodid">Foods</a>
+                            <a href="<?php echo HOMEURL; ?>#foodid">Foods</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                            <a href=" <?php echo HOMEURL; ?>#about">About</a>
+                         </li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="<?php echo HOMEURL; ?>#contact">Contact</a>
                         </li>
                         <li>
                             <a href="<?php echo HOMEURL;?>admin/admin-login.php">Admin</a>

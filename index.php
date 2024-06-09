@@ -83,73 +83,75 @@
         <a href="<?php echo HOMEURL;?>category.php" style="text-align:center; color:#47B4D1;font-size:1rem; text-decoration: none; ">More Category</a>
 
     </section>
-    <section class="food_menu" id="foodid">
-        <h2>Food Menu</h2>
-        <div class="firstrow">
-            <div class="bg_menu" data-aos="fade-right">
-                <img src="imgs/starter1.jpg" alt="food">
-                <div class="details">
-                    <p><b> Maggie</b></p>
-                    <p>Rs 30/-</p>
-                    <p id="detailsc">Made with Italian Sauce, organice vegetables.</p>
-                    <a href="order1.html">Order Now</a>
-                </div>
-            </div>
-            <div class="bg_menu" data-aos="fade-left">
-                <img src="imgs/starter2.jpg" alt="food">
-                <div class="details">
-                    <p><b> Salad</b></p>
-                    <p>Rs 40/-</p>
-                    <p id="detailsc">this item made by Sibu Sahoo using many veg </p>
-                    <a href="order2.html">Order Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="firstrow">
-            <div class="bg_menu" data-aos="fade-right">
-                <img src="imgs/rice1.png" alt="food">
-                <div class="details">
-                    <p>Fryed Rice</p>
-                    <p>Rs 50/-</p>
-                    <p id="detailsc">made by Italian cooker, mixed with veg & nov both</p>
-                    <a href="order3.html">Order Now</a>
-                </div>
-            </div>
-            <div class="bg_menu" data-aos="fade-left">
-                <img src="imgs/rice2.png" alt="food">
-                <div class="details">
-                    <p>Rice</p>
-                    <p>Rs 30/-</p>
-                    <p id="detailsc">Biryani Rice also available</p>
-                    <a href="order4.html">Order Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="firstrow">
-            <div class="bg_menu" data-aos="fade-right">
-                <img src="imgs/starter6.jpg" alt="food">
-                <div class="details">
-                    <p>Chicken pakora</p>
-                    <p>Rs 99/-</p>
-                    <p id="detailsc">Non veg and 5 pices for plate</p>
-                    <a href="order5.html">Order Now</a>
-                </div>
-            </div>
-            <div class="bg_menu" data-aos="fade-left">
-                <img src="imgs/starter5.jpg" alt="food">
-                <div class="details">
-                    <p>Dry Veg</p>
-                    <p>Rs 40/-</p>
-                    <p id="detailsc">Only vegetables</p>
-                    <a href="order6.html">Order Now</a>
-                </div>
-            </div>
-        </div>
-        <a href="#">
+    <h2 style="text-align:center;padding-bottom:40px;padding-top:60px;"  id="foodid">Food Menu</h2>
+    <section class="food_menu">
+
+        <?php
+        //getting foods from database that are active and featured
+        // sql query
+        $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
+
+        //EXECUETE ROWS
+        $res2 =mysqli_query($conn,$sql2);
+
+        //count rows
+        $count2 = mysqli_num_rows($res2);
+
+        //check whether food available or not
+        if($count2 > 0)
+        {
+            //food available
+            while($row = mysqli_fetch_assoc($res2))
+            {
+                //get all the values
+                $id = $row['id'];
+                $title = $row['title'];
+                $price = $row['price'];
+                $description = $row['description'];
+                $image_name = $row['image_name'];
+                ?>
+            <div class="firstrow">
+            <div class="bg_menu" >  
+            <?php
+            //check whether image available or not
+            if($image_name=="")
+            {
+                //image not available
+                echo "Food image not available";
+            }
+            else{
+                ?>
+                <img src="<?php echo HOMEURL; ?>imgs/food/<?php echo $image_name; ?>" alt="food">
+
+                <?php
+            }
+            ?>
+                 <div class="details">
+                     <p><b><?php echo $title; ?></b></p>
+                     <p><?php echo $price; ?></p>
+                     <p id="detailsc"><?php echo $description ?></p>
+                     <a href="order1.html">Order Now</a>
+                 </div>
+               </div>
+             </div>
+
+                <?php
+            }
+        }
+        else{
+            //food not available
+            echo "Food not Available";
+        }
+        
+        
+        // //data-aos="fade-right"
+        ?>
+        
+        
+        </section>
+        <a href="<?php echo HOMEURL; ?>food.php" class="btn-primery">
             <p>See all foods</p>
         </a>
-
-    </section>
     <section class="customer" id="about">
         <div class="review">
             <div class="cooker" data-aos="fade-right">
