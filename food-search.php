@@ -49,7 +49,7 @@
                      <p><b><?php echo $title; ?></b></p>
                      <p>Rs <?php echo $price; ?></p>
                      <p id="detailsc"><?php echo $description ?></p>
-                     <a href="order1.html">Order Now</a>
+                     <a href="<?php echo HOMEURL; ?>order.php?food_id=<?php echo $id; ?>">Order Now</a>
                  </div>
                </div>
              </div>

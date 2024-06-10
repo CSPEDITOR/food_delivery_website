@@ -25,6 +25,7 @@ else{
 ?>
 <h2 style="text-align:center;padding-bottom:40px;padding-top:60px;"  id="foodid">Food Menu</h2>
 <section class="food_menu">
+    <form action="" method="POST">
 <?php
 //create query to get foods based on selected categorys
 $sql3 = "SELECT * FROM tbl_food WHERE category_id = $category_id";
@@ -41,6 +42,7 @@ if($count2 > 0)
 //food is available
 while($row2 = mysqli_fetch_assoc($rec2))
 {
+    $id= $row2['id'];
     $title= $row2['title'];
     $price= $row2['price'];
     $description= $row2['description'];
@@ -66,7 +68,7 @@ while($row2 = mysqli_fetch_assoc($rec2))
                   <p><b><?php echo $title; ?></b></p>
                   <p>Rs <?php echo $price; ?></p>
                   <p id="detailsc"><?php echo $description ?></p>
-                  <a href="order1.html">Order Now</a>
+                  <a href="<?php echo HOMEURL; ?>order.php?food_id=<?php echo $id; ?>">Order Now</a>
             </div>
         </div>
     </div>
@@ -80,5 +82,6 @@ echo "Food not available";
 
 }
 ?>
+</form>
 </section>
 <?php include('repeat/footer.php');?>

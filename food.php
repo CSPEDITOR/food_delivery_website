@@ -1,5 +1,6 @@
 <?php include('repeat/menu2.php');?>
 <h2 style="text-align:center;padding-bottom:40px;padding-top:60px;"  id="foodid">Food Menu</h2>
+<form action="" method="POST">
     <section class="food_menu">
 
         <?php
@@ -46,7 +47,7 @@
                      <p><b><?php echo $title; ?></b></p>
                      <p>Rs <?php echo $price; ?></p>
                      <p id="detailsc"><?php echo $description ?></p>
-                     <a href="order1.html">Order Now</a>
+                     <a href="<?php echo HOMEURL; ?>order.php?food_id=<?php echo $id; ?>">Order Now</a>
                  </div>
                </div>
              </div>
@@ -65,6 +66,7 @@
         
         
         </section>
+        </form>
         <a href="<?php echo HOMEURL; ?>#foodid" class="btn-primery">
             <p>back to Home</p>
         </a>
