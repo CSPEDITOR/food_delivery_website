@@ -1,13 +1,6 @@
     <?php include('repeat/menu2.php'); ?>
 
-    <?php
-    if(isset($_SESSION['order']))
-    {
-        echo $_SESSION['order'];
-        unset($_SESSION['order']);
-    }
-
-    ?>
+    
     <section class="categories" id="homeid">
         <div class="explore">
             <h2>

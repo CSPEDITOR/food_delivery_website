@@ -48,7 +48,7 @@ body{
 
 }
 .small-container{
-    width: 70%;
+    width: 95%;
     flex-direction: column;
     background: #f3f3f3;
     gap: 10px;
@@ -130,16 +130,18 @@ footer{
     height: 200px;
 }
 table {
-    width: 90%;
+    width: 95%;
    
 }
 table tr th{
     border-bottom:1px solid black ;
     text-align: left;
+    font-size: 15px;
 
 }
 table tr{
     height: 30px;
+    font-size: 13px;
 }
 tr input {
    

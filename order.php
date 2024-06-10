@@ -1,4 +1,6 @@
-<?php include('repeat/menu2.php'); ?>
+<?php 
+ob_start();
+include('repeat/menu2.php'); ?>
 <?php
 // Initialize variables to avoid undefined variable warnings
 // $image_name = "";
@@ -10,7 +12,7 @@
    if(isset($_GET['food_id']))
    {
     //get the food id and details of selected food
-    echo $food_id = $_GET['food_id'];
+   $food_id = $_GET['food_id'];
     
     //get the details of the selected food
     $sql = "SELECT * FROM tbl_food WHERE id= $food_id";
@@ -136,7 +138,7 @@
                         customer_address = '$customer_address'
                         ";
 
-                        echo $sql2; die();
+                        // echo $sql2; die();
 
                         //execute the query
                         $rec2 = mysqli_query($conn, $sql2);
@@ -145,12 +147,15 @@
                         if($rec2 == true)
                         {
                             //query executed and order saved
-                            $_SESSION['order']= "Food Order SuccessFully.";
-                            header('location:'.HOMEURL);
+                           
+                            header('location:'.HOMEURL.'successfull.php');
+                            // echo"Ordered";
                             }
                             else{
-                                $_SESSION['order']= "Failed to order.";
-                                header('location:'.HOMEURL);
+                                
+                                header('location:'.HOMEURL.'failed.php');
+                                
+                                // echo "failed to order";
                                 
                         }
                         
@@ -161,4 +166,6 @@
     </div>
       
 </section>
-<?php include('repeat/footer.php');?>
+<?php include('repeat/footer.php');
+ob_end_flush();
+?>
