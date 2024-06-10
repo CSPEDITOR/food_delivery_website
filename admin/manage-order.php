@@ -5,6 +5,15 @@
     <div class="container center">
         <div class="small-container center">
             <h3>Order</h3>
+
+            <?php
+            if(isset($_SESSION['update']))
+            {
+                echo $_SESSION['update'];
+                unset($_SESSION['update']);
+            }
+            ?>
+            <br>
             <div class="container2">
             <div class="container2">
                <table>
@@ -58,13 +67,40 @@
                             <td><?php echo $qty; ?></td>
                             <td><?php echo $total; ?></td>
                             <td><?php echo $order_date; ?></td>
+                            <td>
+                                <?php
+                                //order on delivery delivered cancelled
+
+                                if($status == "Ordered")
+                                {
+                                    echo "<label>$status</label>";
+                                }
+                                elseif($status == "On Delivery")
+                                {
+                                    echo "<label style='color:orange;'>$status</label>";
+                                }
+                                elseif($status == "Delivered")
+                                {
+                                    echo "<label style='color:green;'>$status</label>";
+                                }
+                                elseif($status == "Cancelled")
+                                {
+                                    echo "<label style='color:red;''>$status</label>";
+                                }
+
+                                ?>
+                            </td>
+
+
+
+
                             <td><?php echo $status; ?></td>
                             <td><?php echo $customer_name; ?></td>
                             <td><?php echo $customer_contact; ?></td>
                             <td><?php echo $customer_email; ?></td>
                             <td><?php echo $customer_address; ?></td>
                             <td>
-                                 <a href="#" class="btn-secondary">Order upadate</a>
+                                 <a href="<?php echo HOMEURL; ?>admin/update-order.php?id=<?php echo $id?>" class="btn-secondary">Order upadate</a>
                                  <!-- <a href="#" class="btn-danger">admin remove</a> -->
                             </td>
                         </tr>
