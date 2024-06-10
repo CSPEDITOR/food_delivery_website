@@ -44,7 +44,7 @@
             ?>
                  <div class="details">
                      <p><b><?php echo $title; ?></b></p>
-                     <p><?php echo $price; ?></p>
+                     <p>Rs <?php echo $price; ?></p>
                      <p id="detailsc"><?php echo $description ?></p>
                      <a href="order1.html">Order Now</a>
                  </div>
