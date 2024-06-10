@@ -65,8 +65,8 @@
         
         
         </section>
-        <a href="#" class="btn-primery">
-            <p>See all foods</p>
+        <a href="<?php echo HOMEURL; ?>#foodid" class="btn-primery">
+            <p>back to Home</p>
         </a>
 
 

@@ -29,7 +29,7 @@ include('repeat/menu2.php');?>
 
                    <div class="breakfast">
                        <p><?php echo $title; ?></p>
-                       <a href="#">
+                       <a href="<?php HOMEURL;?>category-food.php?category_id=<?php echo $id; ?>">
                            <?php
                            if($image_name =="")
                            {

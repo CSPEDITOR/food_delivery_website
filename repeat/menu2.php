@@ -30,7 +30,7 @@ include ('admin/config/connection.php');
                 </div>
 
                 <div class="search">
-                    <form action="food-search.html" method="POST" class="formm">
+                    <form action="<?php echo HOMEURL; ?>food-search.php" method="POST" class="formm">
                         <input type="search" name="search" placeholder="Search for Food.." class="btn1" required>
                         <input type="submit" name="submit" value="Search" class="btn2">
                     </form>

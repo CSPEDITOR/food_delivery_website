@@ -39,7 +39,7 @@
 
                     <div class="breakfast">
                         <p><?php echo $title; ?></p>
-                        <a href="#">
+                        <a href="<?php HOMEURL;?>category-food.php?category_id=<?php echo $id; ?>">
                             <?php
                             if($image_name =="")
                             {
@@ -111,7 +111,7 @@
                 $image_name = $row['image_name'];
                 ?>
             <div class="firstrow">
-            <div class="bg_menu" >  
+            <div class="bg_menu" data-aos="fade-right" >  
             <?php
             //check whether image available or not
             if($image_name=="")
@@ -144,7 +144,7 @@
         }
         
         
-        // //data-aos="fade-right"
+        
         ?>
         
         
@@ -152,7 +152,7 @@
         <a href="<?php echo HOMEURL; ?>food.php" class="btn-primery">
             <p>See all foods</p>
         </a>
-    <section class="customer" id="about">
+    <section class="customer" id="about" >
         <div class="review">
             <div class="cooker" data-aos="fade-right">
                 <img src="imgs/cooker.png" alt="">
@@ -185,7 +185,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 200,
+            offset: 100,
             duration: 500,
         });
-    </script>5
+    </script>
