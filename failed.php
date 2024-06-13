@@ -6,7 +6,7 @@
             <i class="checkmark">❌</i>
         </div>
     <h1>Failed</h1> 
-<p>We received Not your purchase request;</p>
+<p>We received Not your order request;</p>
 </div>
 </div>
 <a class="btn-primery" style=" text-align: center;" href="<?php echo HOMEURL;?>">Back To Home Page</a>

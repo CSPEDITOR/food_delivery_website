@@ -6,7 +6,7 @@
             <i class="checkmark">✓</i>
         </div>
     <h1>Success</h1> 
-<p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+<p>We received your Order request;<br/></p>
 </div>
 </div>
 <a class="btn-primery" style=" text-align: center;" href="<?php echo HOMEURL;?>">Back To Home Page</a>
