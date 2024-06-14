@@ -13,9 +13,7 @@
         <br><br><br>
         <br id="category">
         <br>
-        <br>
-        <br>
-        <h2  style="text-align: center;">Food Category </h2>
+        <h2  style="text-align: center;padding-top:100px;padding-bottom:20px">Food Category </h2>
         <br>
         <div class="option">
            
